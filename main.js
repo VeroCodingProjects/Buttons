@@ -1,26 +1,28 @@
 function generateButtons() {
     document.getElementById('mainButton').style.visibility = 'hidden';
     let userInput = document.querySelector("#userInput");
-    var random = Math.floor(Math.random() * userInput.value);
-    let counter = 1;
-    for (let i = 1; i <= userInput.value; ++i) {
+    if (userInput.value > 100) {
+        window.location.reload();
+        alert("The input must be a number under 100 and over 1");
+        return 0;
+    }
+    let winnerIndex = Math.floor(Math.random() * userInput.value);
+    let leftChances = 2;
+    for (let i = 0; i < userInput.value; ++i) {
         const btn = document.createElement("button");
         btn.onclick = function() {
-            if (i == random - 1 && counter <= 3) {
-                alert('You did it'); 
-                ++counter;
-                return false;
-            } else if (counter < 3 && i != random - 1) {
-                alert('Try again! You have ' + (3 - counter) + ' chances left!');
-                ++counter;
-                return false;
+            if (i == winnerIndex) {
+                alert('You did it');
+                window.location.reload();
+            } else if (leftChances > 0 && i != winnerIndex) {
+                alert('Try again! You have ' + leftChances + ' chances left!');
+                --leftChances;
             } else {
-                alert.className = "alert alert-succes";
                 alert("You lost");
                 window.location.reload();
             }
         }
-        btn.innerHTML = "Player " + i;
+        btn.innerHTML = "Player " + (i + 1);
         document.body.appendChild(btn);
         btn.className = "btn btn-warning";
     }
