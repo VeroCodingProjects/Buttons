@@ -3,6 +3,16 @@ body {
     background-repeat: no-repeat;
     background-size: 90%;
     opacity: 0.75;
-    margin-left: 1cm;
 }
 
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(238, 162, 10);
+    border-radius: 50%;
+    margin-left: 50%;
+}
+#h3 {
+    display: table-cell;
+    margin-left: 300px;
+}
