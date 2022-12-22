@@ -6,9 +6,12 @@
         <script src="main.js"> </script>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body class="text-center">
+    <body id="body" class="text-center">
         <h2>Number of players</h2><br>
-        <input type="number" min="2" max="999" id="userInput"><br><br>
-        <button class="btn btn-danger center-block" onclick="generateButtons(), chancesUpdate()", id="mainButton">Generate Buttons</button><br><br>
+        <div id="final-update"></div>
+        <form action="javascript:startGame()">
+            <input id="user-input" type="number" min="4" max="1000" required ="true"><br><br>
+            <button id="main-button" type="submit" class="btn btn-primary">Start game<br><br>
+        </form>
     </body>
 </html>
