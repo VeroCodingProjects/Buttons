@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: 90%;
     opacity: 0.75;
+    text-align: center;
 }
 
 .circle {

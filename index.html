@@ -6,12 +6,14 @@
         <script src="main.js"> </script>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body id="body" class="text-center">
-        <h2>Number of players</h2><br>
-        <div id="final-update"></div>
-        <form action="javascript:startGame()">
-            <input id="user-input" type="number" min="4" max="1000" required ="true"><br><br>
-            <button id="main-button" type="submit" class="btn btn-primary">Start game<br><br>
-        </form>
+    <body>
+        <h1></h1>
+        <div class="text-center">
+            <h2>Number of players</h2><br>
+            <form action="javascript:startGame()">
+                <input id="user-input" type="number" min="4" max="1000" required ="true" onfocus=this.value=''><br><br>
+                <button type="submit" class="btn btn-primary">Start game</button><br><br>
+            </form>
+        </div>
     </body>
 </html>
