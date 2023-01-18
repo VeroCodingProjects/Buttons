@@ -7,12 +7,12 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1></h1>
-        <div class="text-center">
-            <h2>Number of players</h2><br>
-            <form action="javascript:startGame()">
-                <input id="user-input" type="number" min="4" max="1000" required ="true" onfocus=this.value=''><br><br>
-                <button type="submit" class="btn btn-primary">Start game</button><br><br>
+        <h1 id="game-result"></h1>
+        <div id="game-status" class="text-center">
+            <form action="javascript:startGame(this)">
+                <h2>Number of buttons</h2><br>
+                <input id="input" type="number" min="4" max="1000" required ="true" onfocus=this.value=''><br><br>
+                <button id="button" type="submit" class="btn btn-primary">Start game</button><br>
             </form>
         </div>
     </body>
