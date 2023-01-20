@@ -1,0 +1,19 @@
+body {
+    background-image: url("https://www.cg.tuwien.ac.at/research/publications/2020/Pilizar_-2020-bachelor/Pilizar_-2020-bachelor-image.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    opacity: 0.75;
+    text-align: center;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(238, 162, 10);
+    border-radius: 50%;
+    margin-left: 50%;
+}
+#h3 {
+    display: table-cell;
+    margin-left: 300px;
+}

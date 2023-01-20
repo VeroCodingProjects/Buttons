@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="main.js"> </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="game-result"></h1>
+        <div id="game-status" class="text-center">
+            <form action="javascript:startGame(this)">
+                <h2>Number of buttons</h2><br>
+                <input id="input" type="number" min="4" max="1000" required ="true" onfocus=this.value=''><br><br>
+                <button id="button" type="submit" class="btn btn-primary">Start game</button><br>
+            </form>
+        </div>
+    </body>
+</html>
