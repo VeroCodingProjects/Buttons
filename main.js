@@ -1,9 +1,9 @@
 let chancesLeft = 3;
 
-function startGame(data) {
-    data.button.style.visibility = 'hidden';
-    let winnerIndex = Math.floor(Math.random() * data.input.value);
-    createButtons(data.input.value, winnerIndex);
+function startGame(formData) {
+    formData.button.style.visibility = 'hidden';
+    let winnerIndex = Math.floor(Math.random() * formData.input.value);
+    createButtons(formData.input.value, winnerIndex);
 }
 
 function createButtons(input) {
